@@ -1,14 +1,12 @@
-# Text Editor with Undo (Java)
+ Text Editor with Undo (Java)
 
 A menu-driven console text editor built in **Java** for the **Data Structures Lab (CS216L)** project.
 It uses a **Singly Linked List** to store text lines and a **Stack** (linked nodes) to power the **Undo** feature.
 
-**GitHub Repository:** https://github.com/<your-username>/CS216L_Project1_GroupName
-
 **Institution:** Fazaia Bilquis College of Education for Women, Nur Khan, Rawalpindi
 **Submitted To:** Ms Rabiya
 
-## Team Members
+Team Members
 
 | Name | Roll No. |
 | --- | --- |
@@ -18,7 +16,7 @@ It uses a **Singly Linked List** to store text lines and a **Stack** (linked nod
 | Noorulain Ibrar | 5 |
 | Warda Shafiq | 67 |
 
-## Features
+ Features
 
 - Add a line
 - Display all lines (with line numbers)
@@ -31,7 +29,7 @@ It uses a **Singly Linked List** to store text lines and a **Stack** (linked nod
 - Clear document (can be undone)
 - Input validation (menu choice, empty text, line numbers, empty undo stack)
 
-## Data Structures and Algorithms
+ Data Structures and Algorithms
 
 | Component | Used For |
 | --- | --- |
@@ -40,7 +38,7 @@ It uses a **Singly Linked List** to store text lines and a **Stack** (linked nod
 | Linear Search | Finding text in the document |
 | Bubble Sort | Sorting lines alphabetically |
 
-## Time Complexity (n = number of lines)
+ Time Complexity (n = number of lines)
 
 | Operation | Complexity |
 | --- | --- |
@@ -53,9 +51,9 @@ It uses a **Singly Linked List** to store text lines and a **Stack** (linked nod
 | Save undo snapshot | O(n) |
 | Restore document | O(n) |
 
-**Space:** O(n) for the list, O(k) stack entries, up to O(kn) for k snapshots.
+Space:O(n) for the list, O(k) stack entries, up to O(kn) for k snapshots.
 
-## Project Structure
+ Project Structure
 
 ```
 CS216L_Project1_GroupName/
@@ -68,9 +66,9 @@ CS216L_Project1_GroupName/
 └── .gitignore
 ```
 
-## How to Run
+How to Run
 
-**Requirements:** JDK 8 or higher.
+Requirements: JDK 8 or higher.
 
 ```bash
 git clone https://github.com/<your-username>/CS216L_Project1_GroupName.git
@@ -81,7 +79,7 @@ java TextEditorWithUndo
 
 Or open the `src` folder in Eclipse / IntelliJ IDEA / VS Code and run `TextEditorWithUndo`.
 
-## Testing
+Testing
 
 | # | Operation | Expected Result |
 | --- | --- | --- |
@@ -96,15 +94,8 @@ Or open the `src` folder in Eclipse / IntelliJ IDEA / VS Code and run `TextEdito
 | 9 | Invalid menu choice | Error message |
 | 10 | Undo with empty stack | "Nothing to undo" message |
 
-## Screenshots
 
-Add your screenshots in the `screenshots/` folder and link them here, for example:
-
-```
-![Main Menu](screenshots/1_main_menu.png)
-```
-
-## Limitations
+ Limitations
 
 - Console-based (no GUI)
 - Document is stored only in memory (no file saving)
@@ -112,7 +103,7 @@ Add your screenshots in the `screenshots/` folder and link them here, for exampl
 - Bubble sort is slow for very large documents
 - Undo stores full snapshots, which uses extra memory
 
-## Future Enhancements
+ Future Enhancements
 
 - Save / load documents from files
 - Graphical user interface
